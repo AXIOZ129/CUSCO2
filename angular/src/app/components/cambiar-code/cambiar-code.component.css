@@ -1,0 +1,260 @@
+/* FONT */
+@font-face {
+    font-family: gothic;
+    src: url(../../../font/GOTHIC.TTF);
+  }
+  
+  /* CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    font-family: gothic;
+  }
+  
+  header {
+    width: 100%;
+    /* height: 100vh; */
+  }
+  
+  /* NAVEGATION */
+  nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b0c9ef;
+  }
+  
+  .logo {
+    width: 60px;
+    margin-left: 20px;
+  }
+  
+  .bar-btn {
+    font-size: 30px;
+    color: #09326a;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  .nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .nav-menu li a.active,
+  .nav-menu li a:hover {
+    font-weight: 900;
+    transition: 0.3s;
+    content: "";
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  #check:checked ~ .nav-menu {
+    height: 100vh;
+  }
+  
+  #check:checked ~ .nav-menu li {
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* CSS */
+    .logo {
+      width: 50px;
+      margin-left: 50px;
+    }
+  
+    nav {
+      height: 60px;
+      background-color: #b0c9ef;
+    }
+  
+    .bar-btn {
+      display: none;
+    }
+  
+    .nav-menu {
+      position: relative;
+      height: 100px;
+      top: 0px;
+      background: none;
+      transition: none;
+      text-align: right;
+      margin-right: 50px;
+    }
+  
+    .nav-menu li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 20px;
+      transition: none;
+    }
+  
+    .nav-menu li a {
+      color: #09326a;
+      font-size: 16px;
+    }
+  
+    .active{
+      cursor: pointer;
+    }
+  }
+  
+  /* FOOTER */
+  footer {
+    margin-top: 100px;
+    color: white;
+    background-color: #a5b2ba;
+  }
+  
+  .copyright-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .copyright {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    padding: 3rem 6rem;
+    margin: auto;
+    width: max-content;
+    font-size: 20px;
+  }
+  
+  .footer-content-container {
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .footer-img{
+    width: 10%;
+  }
+.container-pp {
+    margin: auto;
+    background: #b0c9ef;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  
+  .container-p {
+    text-align: center;
+    position: relative;
+  }
+  
+  .container-p p {
+    position: absolute;
+    color: #09326a;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 32px;
+    margin-left: 45px;
+  }
+  
+  .boxf {
+    margin-top: 20px;
+  }
+  
+  .box {
+    margin: auto;
+    width: 300px;
+    padding: 40px;
+    background: #b0c9ef;
+    text-align: center;
+    position: relative;
+    border-radius: 40px;
+  }
+  .box h1 {
+    color: black;
+    font-weight: 900;
+  }
+  .box p {
+    margin-top: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .box h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .box input[type="text"],
+  .box input[type="password"] {
+    border: 0;
+    background: #b8c0cb;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #909091;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type="text"]:focus,
+  .box input[type="password"]:focus {
+    width: 280px;
+    border-color: #909091;
+  }
+  .box a[type="submit"] {
+    width: 45%;
+    border: 0;
+    background: #7bd1a0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #76b692;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .box a[type="submit"]:hover {
+    background: #7bd1a0;
+  }
+  

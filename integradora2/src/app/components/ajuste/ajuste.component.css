@@ -1,0 +1,110 @@
+.container-pp {
+    margin: auto;
+    background: #b0c9ef;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  
+  .container-p {
+    text-align: center;
+    position: relative;
+  }
+  
+  .container-p p {
+    position: absolute;
+    color: #09326a;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 32px;
+    margin-left: 200px;
+  }
+  
+  .container {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 25px;
+  }
+  
+  .container-c {
+    border-radius: 40px;
+    background: #b0c9ef;
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  
+  .cont-n {
+    margin-left: 200px;
+    border-radius: 40px;
+    padding: 30px;
+    background: #6fcdbd;
+  }
+  
+  .cont-n input {
+    border: 0px;
+    padding: 30px;
+    background: #6fcdbd;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+  }
+  
+  .cont-a {
+    margin-left: 10px;
+    border-radius: 40px;
+    padding: 30px;
+    background: #f39ba7;
+  }
+  
+  .cont-a p {
+    width: 100px;
+    padding: 30px;
+    background: #f39ba7;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .num {
+    display: inline-flex;
+    margin-bottom: 3px;
+    margin-top: 80px;
+  }
+  
+  .aa {
+    color: #0b359a;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .ac {
+    margin-left: 60px;
+    text-decoration: none;
+    background: #7cd1a0;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cent {
+    margin-bottom: 80px;
+  }
+  
+  .q {
+    display: inline-flex;
+    font-weight: bold;
+    color: #98151a;
+  }
+  
+  .w {
+    margin-left: 360px;
+    display: inline-flex;
+    font-weight: bold;
+    color: #308f81;
+  }
+  

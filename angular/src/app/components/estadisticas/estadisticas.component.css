@@ -1,0 +1,253 @@
+.container-pp {
+    margin: auto;
+    background: #b0c9ef;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  
+  .container-p {
+    text-align: center;
+    position: relative;
+  }
+  
+  .container-p p {
+    position: absolute;
+    color: #09326a;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 32px;
+    margin-left: 200px;
+  }
+  
+  .stack-1 {
+    display: flex;
+  }
+  
+  .stack-1-1 {
+    margin: auto;
+    display: flex;
+    margin-bottom: 102px;
+  }
+  
+  .stack-c {
+    text-align: center;
+    width: 350px;
+    background: #98eefb;
+    border-radius: 15%;
+    margin-top: 110px;
+  }
+  
+  .stack-c a {
+    width: 40%;
+    background: #7bd1a0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #76b692;
+    padding: 40px 30px;
+    color: black;
+    border-radius: 100%;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  
+  .img-1 {
+    margin-left: 40px;
+    margin-top: 87px;
+    width: 79%;
+  }
+  
+  .desc-1 {
+    margin-left: 100px;
+    margin-top: 80px;
+    border-radius: 40px;
+    position: relative;
+    width: 800px;
+    text-align: justify;
+    background: #b0c9ef;
+  }
+  
+  .desc-1-p {
+    margin: 20px;
+  }
+  
+  .desc-1-p p {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+  }
+  
+  /* FONT */
+@font-face {
+    font-family: gothic;
+    src: url(../../../font/GOTHIC.TTF);
+  }
+  
+  /* CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    font-family: gothic;
+  }
+  
+  header {
+    width: 100%;
+    /* height: 100vh; */
+  }
+  
+  /* NAVEGATION */
+  nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b0c9ef;
+  }
+  
+  .logo {
+    width: 60px;
+    margin-left: 20px;
+  }
+  
+  .bar-btn {
+    font-size: 30px;
+    color: #09326a;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  .nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .nav-menu li a.active,
+  .nav-menu li a:hover {
+    font-weight: 900;
+    transition: 0.3s;
+    content: "";
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  #check:checked ~ .nav-menu {
+    height: 100vh;
+  }
+  
+  #check:checked ~ .nav-menu li {
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* CSS */
+    .logo {
+      width: 50px;
+      margin-left: 50px;
+    }
+  
+    nav {
+      height: 60px;
+      background-color: #b0c9ef;
+    }
+  
+    .bar-btn {
+      display: none;
+    }
+  
+    .nav-menu {
+      position: relative;
+      height: 100px;
+      top: 0px;
+      background: none;
+      transition: none;
+      text-align: right;
+      margin-right: 50px;
+    }
+  
+    .nav-menu li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 20px;
+      transition: none;
+    }
+  
+    .nav-menu li a {
+      color: #09326a;
+      font-size: 16px;
+    }
+  
+    .active{
+      cursor: pointer;
+    }
+  }
+  
+  /* FOOTER */
+  footer {
+    margin-top: 100px;
+    color: white;
+    background-color: #a5b2ba;
+  }
+  
+  .copyright-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .copyright {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    padding: 3rem 6rem;
+    margin: auto;
+    width: max-content;
+    font-size: 20px;
+  }
+  
+  .footer-content-container {
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .footer-img{
+    width: 10%;
+  }

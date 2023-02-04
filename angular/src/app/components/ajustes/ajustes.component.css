@@ -1,0 +1,278 @@
+/* FONT */
+@font-face {
+    font-family: gothic;
+    src: url(../../../font/GOTHIC.TTF);
+  }
+  
+  /* CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    font-family: gothic;
+  }
+  
+  header {
+    width: 100%;
+    /* height: 100vh; */
+  }
+  
+  /* NAVEGATION */
+  nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b0c9ef;
+  }
+  
+  .logo {
+    width: 60px;
+    margin-left: 20px;
+  }
+  
+  .bar-btn {
+    font-size: 30px;
+    color: #09326a;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  .nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .nav-menu li a.active,
+  .nav-menu li a:hover {
+    font-weight: 900;
+    transition: 0.3s;
+    content: "";
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  #check:checked ~ .nav-menu {
+    height: 100vh;
+  }
+  
+  #check:checked ~ .nav-menu li {
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* CSS */
+    .logo {
+      width: 50px;
+      margin-left: 50px;
+    }
+  
+    nav {
+      height: 60px;
+      background-color: #b0c9ef;
+    }
+  
+    .bar-btn {
+      display: none;
+    }
+  
+    .nav-menu {
+      position: relative;
+      height: 100px;
+      top: 0px;
+      background: none;
+      transition: none;
+      text-align: right;
+      margin-right: 50px;
+    }
+  
+    .nav-menu li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 20px;
+      transition: none;
+    }
+  
+    .nav-menu li a {
+      color: #09326a;
+      font-size: 16px;
+    }
+  
+    .active{
+      cursor: pointer;
+    }
+  }
+  
+  /* FOOTER */
+  footer {
+    margin-top: 100px;
+    color: white;
+    background-color: #a5b2ba;
+  }
+  
+  .copyright-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .copyright {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    padding: 3rem 6rem;
+    margin: auto;
+    width: max-content;
+    font-size: 20px;
+  }
+  
+  .footer-content-container {
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .footer-img{
+    width: 10%;
+  }
+.container-pp {
+    margin: auto;
+    background: #b0c9ef;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  
+  .container-p {
+    text-align: center;
+    position: relative;
+  }
+  
+  .container-p p {
+    position: absolute;
+    color: #09326a;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 32px;
+    margin-left: 200px;
+  }
+  
+  .container {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 25px;
+  }
+  
+  .container-c {
+    border-radius: 40px;
+    background: #b0c9ef;
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  
+  .cont-n {
+    margin-left: 200px;
+    border-radius: 40px;
+    padding: 30px;
+    background: #6fcdbd;
+  }
+  
+  .cont-n input {
+    border: 0px;
+    padding: 30px;
+    background: #6fcdbd;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+  }
+  
+  .cont-a {
+    margin-left: 10px;
+    border-radius: 40px;
+    padding: 30px;
+    background: #f39ba7;
+  }
+  
+  .cont-a p {
+    width: 100px;
+    padding: 30px;
+    background: #f39ba7;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .num {
+    display: inline-flex;
+    margin-bottom: 3px;
+    margin-top: 80px;
+  }
+  
+  .aa {
+    color: #0b359a;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .ac {
+    margin-left: 60px;
+    text-decoration: none;
+    background: #7cd1a0;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cent {
+    margin-bottom: 80px;
+  }
+  
+  .q {
+    display: inline-flex;
+    font-weight: bold;
+    color: #98151a;
+  }
+  
+  .w {
+    margin-left: 360px;
+    display: inline-flex;
+    font-weight: bold;
+    color: #308f81;
+  }
+  

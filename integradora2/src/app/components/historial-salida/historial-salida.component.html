@@ -1,0 +1,84 @@
+<header>
+  <nav>
+    <div>
+      <img src="../../../assets/images/logo.png" class="logo">
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="bar-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul class="nav-menu">
+      <li><a routerLink="/home" class="active">Home</a></li>
+      <li><a routerLink="/sobre" class="active">Sobre CusCo</a></li>
+      <li><a routerLink="/funcion" class="active">¿Cómo funciona?</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container-pp">
+  <div class="container-p">
+    <p>Historial</p>
+  </div>
+</div>
+
+<div class="stack">
+  <div class="stack-1">
+    <div class="container">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let sensor of sensorService.sensor">
+            <td *ngIf="sensor.sensor =='saliendo'">{{ sensor.sensor }}</td>
+            <td *ngIf="sensor.sensor =='saliendo'">{{ sensor.fecha }}</td>
+            <td *ngIf="sensor.sensor =='saliendo'">{{ sensor.hora }}</td>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="btns">
+      <h3>Filtrar por:</h3>
+      <a routerLink="/historialentrada" class="e">Entradas</a>
+      <a routerLink="/historialsalida" class="s">Salidas</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-content-container">
+      <div class="img-p">
+        <img src="../../../assets/images/telefono.png" class="footer-img">
+      </div>
+
+      <span class="menu-title">5512345678</span>
+    </div>
+
+    <div class="footer-content-container">
+      <div class="img-p">
+        <img src="../../../assets/images/facebook.png" class="footer-img">
+      </div>
+
+      <span class="menu-title">CusCo_Of</span>
+    </div>
+
+    <div class="footer-content-container">
+      <div class="img-p">
+        <img src="../../../assets/images/email.png" class="footer-img">
+      </div>
+
+      <span class="menu-title">cusco@gmail.com</span>
+    </div>
+
+  </div>
+  <div class="copyright-container">
+    <span class="copyright">Copyright 2021, cusco.com. Todos los derechos reservados.</span>
+  </div>
+</footer>
